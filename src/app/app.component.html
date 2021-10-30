@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container justify-content-around">
+                <div class="">
+                    <button type="button" (click)="inicio()" class="btn btn-outline-secondary mx-2">Inicio</button>
+                    <button type="button" class="btn btn-outline-secondary mx-2">Noticias</button>
+                    <button type="button" (click)="ayuda()" class="btn btn-outline-secondary mx-2">Servicio al
+                        Cliente</button>
+                </div>
+
+            </div>
+        </div>
+        <img src="./assets/grove-in-summer.jpg" class="img-fluid img-background" alt="...">
+    </header>
+
+    <main>
+        <div *ngIf="mostrar_galeria">
+            <div class="album py-5 bg-light">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./assets/breathtaking-view-tree-field-with-tree-line-background-beautiful-sky.jpg"
+                                    class="img-fluid" alt="...">
+                                <title>Placeholder</title>
+
+
+
+                                <div class="card-body text-center">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+
+
+                                    <button type="button" class="btn btn-success">Leer Más</button>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./assets/close-up-picture-hand-watering-sapling-plant.jpg" class="img-fluid"
+                                    alt="...">
+                                <title>Placeholder</title>
+
+
+
+                                <div class="card-body text-center">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+
+                                    <button type="button" class="btn btn-info text-white">Leer Más</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card shadow-sm">
+                                <img src="./assets/cute-little-child-girl-with-seedlings-sunset-background-fun-little-gardener-spring-concept-nature-care-marijuana-growing-planting-cannabis-holding-it-hand.jpg"
+                                    class="img-fluid" alt="...">
+                                <title>Placeholder</title>
+
+
+
+                                <div class="card-body text-center">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+
+                                    <button type="button" class="btn btn-danger">Leer Más</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card shadow-sm">
+                                <img src="./assets/beautiful-view-stream-flowing-through-mossy-rocks-perfect-wallpaper.jpg"
+                                    class="img-fluid" alt="...">
+                                <title>Placeholder</title>
+
+
+                                <div class="card-body text-center">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+
+                                    <button type="button" class="btn btn-outline-secondary">Leer Más</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card shadow-sm">
+                                <img src="./assets/high-angle-shot-big-river-surrounded-by-tree-covered-hills.jpg"
+                                    class="img-fluid" alt="...">
+
+                                <div class="card-body text-center">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+
+                                    <button type="button" class="btn  btn-outline-secondary">Leer Más</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card shadow-sm">
+                                <img src="./assets/beautiful-scenery-green-valley-near-alp-mountains-austria-cloudy-sky.jpg"
+                                    class="img-fluid" alt="...">
+
+                                <div class="card-body text-center">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+
+                                    <button type="button" class="btn  btn-outline-secondary">Leer Más</button>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card shadow-sm">
+                                <img src="./assets/breathtaking-view-tree-field-with-tree-line-background-beautiful-sky.jpg"
+                                    class="img-fluid" alt="...">
+
+                                <div class="card-body text-center">
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+
+                                    <a type="button" class="btn btn-outline-secondary">Leer Más</a>
+                                    <a href="" [routerLink]="['/noticias']" routerLinkActive="active">Home</a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="mostrar_ayuda">
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+                <div>
+                    <label>
+                        Nombre Completo:
+                        <input formControlName="nombre" placeholder="Ingrese nombre">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Telefono:
+                        <input formControlName="telefono" placeholder="Ingrese telefono">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Correo Electronico:
+                        <input formControlName="email" placeholder="Tu email">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Dirigido a:
+                        <select (change)="CambiarOpcion($event)" formControlName="dirigido">
+                            <!-- <option value="">Seleccione una opcion</option> -->
+                            <option *ngFor="let opcion of opciones" [ngValue]="opcion">{{opcion}}</option>
+                         </select>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Mensaje:
+                        <textarea formControlName="mensaje"></textarea>
+                    </label>
+                    </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+
+            <h2 class="text-center">Noticias Valparaíso</h2>
+            <h4 class="text-center">Copyright 2021 Constanza Company|Creado por: Constanza Cerda Guerra</h4>
+
+        </div>
+    </footer>
+
+    <router-outlet></router-outlet>
+
+
+
+</body>
+
+</html>
